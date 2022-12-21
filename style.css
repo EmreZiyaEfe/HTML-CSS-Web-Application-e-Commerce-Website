@@ -5,6 +5,7 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -16,23 +17,138 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px;
+    box-shadow: 0 2px 5px gray;
     padding: 25px 25px;
+    background-color: black;
+    z-index: 1000;
+    
 }
 
 .logo {
-    color: black;
-    font-size: 26px;
+    color: orange;
+    font-size: 30px;
     font-weight: 600;
     line-height: 0.8;
 }
 
+.logo span {
+    border-bottom: 2px solid orange;
+    color: white;
+}
+
 #menu-icon {
     font-size: 26px;
-    color: black;
+    color: white;
     display: none;
+    z-index: 10001;
 }
 
 .nav-center {
     display: flex;
+}
+
+.nav-center a {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+
+.nav-center a:hover {
+    background-color: orange;
+    color: white;
+    border-radius: 12px;
+}
+
+.nav-icons {
+    display: inline-block;
+}
+.nav-icons i{
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.nav-icons i:hover {
+    color: orange;
+}
+
+.shop {
+    padding: 100px 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.box {
+    padding: 5px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 5px 10px rgb(55, 55, 55);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all .35s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.box .cart .fa-cart-shopping{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: orange;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.box .cart .fa-heart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: orange;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.box .cart i:hover {
+    background-color: orange;
+    color: black;
+}
+
+.box:hover {
+    transform: translateY(-5px);
 }
