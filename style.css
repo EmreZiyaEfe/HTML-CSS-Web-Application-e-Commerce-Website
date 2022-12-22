@@ -152,3 +152,74 @@ nav {
 .box:hover {
     transform: translateY(-5px);
 }
+
+.about {
+    margin-top: 100px;
+}
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: auto;
+}
+
+.contact {
+    margin-top: 100px;
+}
+.contact-content {
+    text-align: center;
+}
+
+.contact-box-container {
+    display: flex;
+}
+
+.contact-box {
+    border: 1px solid orange;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-content h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.contact-box h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact-box h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+button:hover {
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+}
