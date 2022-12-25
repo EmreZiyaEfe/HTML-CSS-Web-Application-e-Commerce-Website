@@ -43,6 +43,7 @@ nav {
 
 .nav-center {
   display: flex;
+  padding-left: 100px;
 }
 
 .nav-center a {
@@ -74,15 +75,20 @@ nav {
   color: orange;
 }
 
+.nav-icons input {
+  padding: 2px;
+  border-radius: 5px;
+}
+
 .shop {
   padding: 100px 100px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  align-items: center;
-  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
   text-align: center;
   padding-top: 32px;
 }
@@ -99,7 +105,7 @@ nav {
 
 .box img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .box h4 {
@@ -120,6 +126,7 @@ nav {
   left: 0;
   width: 35px;
   height: 35px;
+  border-radius: 10px 0 0 0;
   background-color: black;
   color: orange;
   display: inline-flex;
@@ -134,6 +141,7 @@ nav {
   right: 0;
   width: 35px;
   height: 35px;
+  border-radius: 0 0 10px 0;
   background-color: black;
   color: orange;
   display: inline-flex;
@@ -194,6 +202,7 @@ nav {
 }
 
 .contact-box {
+  width: 30%;
   border: 1px solid orange;
   margin: auto;
   padding: 20px;
@@ -234,25 +243,31 @@ nav {
 }
 
 .contact-address {
-  position: relative;
+  width: 97%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 80%;
-}
-
-.contact-city-address {
-  width: 40%;
-  margin-left: 30px;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .contact-maps {
-  width: 40%;
+  margin: 30px 30px;
+}
+
+.contact-box input, textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form {
+  margin: 30px 30px;
 }
 
 footer {
     background-color:black;
-    height: 350px;
+    height: 370px;
 }
 
 .footer-content {
@@ -347,4 +362,15 @@ footer li a:hover {
 
 .pay-icons li {
   margin-inline: 15px;
+}
+
+.copyright {
+  padding-top: 5px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width:768) {
+  
 }
