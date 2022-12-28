@@ -5,7 +5,6 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
 }
 
 nav {
@@ -32,13 +31,6 @@ nav {
 .logo span {
   border-bottom: 2px solid orange;
   color: white;
-}
-
-#menu-icon {
-  font-size: 26px;
-  color: white;
-  display: none;
-  z-index: 10001;
 }
 
 .nav-center {
@@ -78,6 +70,10 @@ nav {
 .nav-icons input {
   padding: 2px;
   border-radius: 5px;
+}
+
+.login-box {
+  margin: 100px auto;
 }
 
 .shop {
@@ -201,7 +197,7 @@ nav {
   display: flex;
 }
 
-.contact-box {
+.contact-box, .login-box {
   width: 30%;
   border: 1px solid orange;
   margin: auto;
@@ -209,7 +205,7 @@ nav {
   border-radius: 10px;
 }
 
-.contact-content h2 {
+.contact-content h2, .faq h2 {
   font-size: 32px;
   margin-bottom: 30px;
 }
@@ -225,7 +221,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.contact button {
+.contact button, .login-box button {
   width: 100%;
   margin-top: 10px;
   padding: 10px 20px;
@@ -236,7 +232,7 @@ nav {
   transition: 0.8s;
 }
 
-.contact button:hover {
+.contact button:hover, .login-box button:hover {
   background-color: black;
   color: orange;
   cursor: pointer;
@@ -253,7 +249,7 @@ nav {
   margin: 30px 30px;
 }
 
-.contact-box input, textarea{
+.contact-box input, .login-box input, textarea{
     width: 100%;
     margin-bottom: 30px;
     padding: 10px;
@@ -349,7 +345,7 @@ footer li a:hover {
 }
 
 .pay-icons {
-  color: white;
+  color: gray;
   font-size: 30px;
   text-align: center;
 }
@@ -372,5 +368,22 @@ footer li a:hover {
 }
 
 @media screen and (max-width:768) {
-  
+  nav {
+    width: 100%;
+    display: inline;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-center {
+    width: 100%;
+  }
+
+  .nav-icons {
+    width: 100%;
+  }
+
 }
